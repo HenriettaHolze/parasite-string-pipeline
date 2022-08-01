@@ -1,0 +1,18 @@
+##### INPUT #####
+# Cooccurrence scores of host-parasite PPIs (A-B and B-A)
+cooccur_scores_path: /home/projects/ku_10024/people/henhol/tagger-host-parasite/all_host_parasite_database_cooccur_interact_global_only_parasites.tsv
+# Location of SIMAP all vs. all searches: Self normalized bitscores and reciprocal best hits in both directions
+simap_data_path: /home/projects/ku_10024/people/henhol/transfer-host-parasite/simap-processed/
+# Host parasite taxid pairs 
+parasite_host_pairs_path: /home/projects/ku_10024/people/henhol/tagger-host-parasite/species.v11.0.eukaryotes.parasites.all_taxid_pairs.tsv
+# Direct physical textmining score
+nlp_scores_path: /home/projects/ku_10024/people/henhol/phys_score_nlp/phys_score_nlp_interspecies_prior.tsv
+# Species pairs between which to transfer
+transfer_pairs_path: /home/projects/ku_10024/people/henhol/transfer-host-parasite/transfer_species_pairs_levels.tsv
+# path to inter-species experiments scores, not filtered for host-parasite PPIs yet
+experiments_physical_path: /home/projects/ku_10024/people/henhol/string-experiments-interspecies/experiments_interspecies_comb-pmids_phys.tsv
+experiments_functional_path: /home/projects/ku_10024/people/henhol/string-experiments-interspecies/experiments_interspecies_comb-pmids_func.tsv
+
+##### RESULTS #####
+# store all intermediate and results files of the snakemake workflow 
+workdir: /home/projects/ku_10024/people/henhol/transfer-host-parasite/snakemake-transfer-results/
